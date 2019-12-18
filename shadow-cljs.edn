@@ -1,0 +1,9 @@
+{:deps
+ {:aliases [:web]}
+
+ :builds
+ {:web {:target :npm-module
+        :output-dir "native-web/cljs"
+        :build-hooks [(interop.shadow-next/create-pages)]
+        :entries [example.app]}}}
+

@@ -1,0 +1,5 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :aliases 
+ {:web {:extra-paths ["src"]
+        :extra-deps 
+        {thheller/shadow-cljs {:mvn/version "2.8.81"}}}}}

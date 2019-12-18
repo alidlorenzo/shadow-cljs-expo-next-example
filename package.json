@@ -1,0 +1,23 @@
+{
+  "name": "resoflect",
+  "description": "Collect and share what resonates with you.",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ],
+    "packages": [
+      "expo/"
+    ]
+  },
+  "scripts": {
+    "start": "cd native-web && expo start",
+    "start.web": "cd native-web && yarn start.web",
+    "build": "shadow-cljs release app",
+    "build.web": "cd native-web && start build.web"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.8.83"
+  }
+}
